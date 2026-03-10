@@ -2,6 +2,9 @@
   "name": "Selenium Assessment Lab",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
 
+  "hostRequirements": {
+    "cpus": 2
+  },
   "customizations": {
     "vscode": {
       "extensions": [
