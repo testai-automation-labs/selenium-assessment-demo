@@ -1,16 +1,16 @@
 {
-    "name": "Selenium Assessment Lab",
-    "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "ms-python.python",
-          "github.copilot",
-          "github.copilot-chat"
-        ]
-      }
-    },
-  
-    "postCreateCommand": "pip install selenium pytest webdriver-manager"
-  }
+  "name": "Selenium Assessment Lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "github.copilot",
+        "github.copilot-chat"
+      ]
+    }
+  },
+
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y chromium && pip install selenium pytest webdriver-manager"
+}
